@@ -10,18 +10,14 @@ $ldap = new Ldap($config['ldap']);
 // $usersList = $ldap->getUsersList();	
 // $userCount = $ldap->getUsersCount();
 
-// $usersList = $ldap->getUsersInGroupCount("_INIG_ALL");
-$usersList = $ldap->getUsersInGroup("admini");
+// $usersList = $ldap->getUsersInGroupCount("groupname");
+$usersList = $ldap->getUsersInGroup("groupname");
 var_dump($usersList);
 
-// $is = $ldap->isUserInLdap('baran');
+// $is = $ldap->isUserInLdap('kowalski');
 // var_dump($is);
 
-// $user = $ldap->getUserBySam('sikorak');
+// $user = $ldap->getUserBySam('kowalski');
 // var_dump($user);
 
-// $c = $ldap->getUsersInGroupCount("skarbnicy");
-// print_r($c);
-
 echo PHP_EOL;
-// var_dump($userCount);
